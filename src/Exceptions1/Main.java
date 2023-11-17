@@ -18,7 +18,7 @@ public class Main {
         if (number >= min && number <= max) {
             return true;
         } else {
-            throw new IllegalArgumentException("Il numero non è nel range specificato.");
+            throw new IllegalArgumentException("Il numero non è nel range");
         }
     }
 }

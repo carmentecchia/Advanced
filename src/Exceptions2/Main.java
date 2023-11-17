@@ -7,11 +7,11 @@ class NonNumeroException extends Exception {
 public class Main {
 
     public static void main(String[] args) {
-        char carattere = 'a';
+        char carattere = 'x';
 
         try {
             verificaNumero(carattere);
-            System.out.println("Il carattere è un numero.");
+            System.out.println("Il carattere è un numero");
         } catch (NonNumeroException e) {
             System.out.println(e.getMessage());
         }
@@ -19,7 +19,7 @@ public class Main {
 
     static void verificaNumero(char c) throws NonNumeroException {
         if (!Character.isDigit(c)) {
-            throw new NonNumeroException("Il carattere non è un numero.");
+            throw new NonNumeroException("Il carattere non è un numero");
         }
     }
 }

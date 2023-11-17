@@ -7,7 +7,7 @@ public class Main {
 
         try {
             int result = divideNumbers(numerator, denominator);
-            System.out.println("Il risultato della divisione è: " + result);
+            System.out.println("Il risultato è: " + result);
         } catch (ArithmeticException e) {
             System.out.println("Errore di divisione per zero: " + e.getMessage());
         }
@@ -15,7 +15,7 @@ public class Main {
 
     public static int divideNumbers(int numerator, int denominator) {
         if (denominator == 0) {
-            throw new ArithmeticException("Impossibile dividere per zero.");
+            throw new ArithmeticException("Impossibile dividere per zero");
         } else {
             return numerator / denominator;
         }

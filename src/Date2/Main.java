@@ -8,14 +8,10 @@ import java.time.format.FormatStyle;
        // Stampa sulla console
     public class Main {
     public static void main(String[] args) {
-        String dateString = "2002-03-01T13:00:00Z";
-        java.time.OffsetDateTime offsetDateTime = java.time.OffsetDateTime.parse(dateString);
+        OffsetDateTime date = OffsetDateTime.parse("2002-03-01T13:00:00Z");
 
+        String dataStringMedium = date.format(DateTimeFormatter.ofLocalizedDate(FormatStyle.MEDIUM));
 
-        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd MMMM yyyy");
-        String formattedDate = offsetDateTime.format(formatter);
-
-
-        System.out.println(formattedDate);
+        System.out.println("Medium:" + dataStringMedium);
     }
 }

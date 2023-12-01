@@ -6,16 +6,15 @@ import java.time.format.FormatStyle;
         //Stampa le varie versioni
 public class Main {
     public static void main(String[] args) {
-        String dateString = "2002-03-01T13:00:00Z";
-        java.time.OffsetDateTime offsetDateTime = java.time.OffsetDateTime.parse(dateString);
+      OffsetDateTime date = OffsetDateTime.parse("2002-03-01T13:00:00Z");
 
-        String fullFormat = format(DateTimeFormatter.ofLocalizedDate(FormatStyle.FULL), offsetDateTime);
+        String fullFormat = date.format(DateTimeFormatter.ofLocalizedDate(FormatStyle.FULL));
         System.out.println("FULL Format: " + fullFormat);
 
-        String mediumFormat = format(DateTimeFormatter.ofLocalizedDate(FormatStyle.MEDIUM), offsetDateTime);
+        String mediumFormat = date.format(DateTimeFormatter.ofLocalizedDate(FormatStyle.MEDIUM));
         System.out.println("MEDIUM Format: " + mediumFormat);
 
-        String shortFormat = format(DateTimeFormatter.ofLocalizedDate(FormatStyle.SHORT), offsetDateTime);
+        String shortFormat = date.format(DateTimeFormatter.ofLocalizedDate(FormatStyle.SHORT));
         System.out.println("SHORT Format: " + shortFormat);
     }
 

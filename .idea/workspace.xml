@@ -6,8 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="27f9e934-58d0-4579-8a49-6c17699d1dd0" name="Changes" comment=".">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Test2/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Test2/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Test2/MainTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Test2/MainTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Test3/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Test3/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Test3/MainTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Test3/MainTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -82,7 +81,7 @@
       <recent name="Test1" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.MainTest.testFormat">
     <configuration name="Date2.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Date2.Main" />
       <module name="Advanced" />
@@ -102,19 +101,6 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="Date3.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Test3.Main" />
-      <module name="Advanced" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Test3.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -151,13 +137,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MainTest.testFormat" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Advanced" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Test3.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Test3" />
+      <option name="MAIN_CLASS_NAME" value="Test3.MainTest" />
+      <option name="METHOD_NAME" value="testFormat" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MainTest.testFormat" />
         <item itemvalue="JUnit.MainTest.main" />
         <item itemvalue="Application.Date2.Main" />
         <item itemvalue="Application.Test4.Main" />
         <item itemvalue="Application.Date3.Main" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -386,7 +388,15 @@
       <option name="project" value="LOCAL" />
       <updated>1701794635122</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary=".">
+      <option name="closed" value="true" />
+      <created>1701797888715</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1701797888715</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

@@ -20,7 +20,7 @@ public class Main {
         System.out.println("SHORT Format: " + shortFormat);
     }
 
-    private static String format(DateTimeFormatter dateTimeFormatter, java.time.OffsetDateTime offsetDateTime) {
+    public static String format(DateTimeFormatter dateTimeFormatter, java.time.OffsetDateTime offsetDateTime) {
         return offsetDateTime.format(dateTimeFormatter);
     }
 }

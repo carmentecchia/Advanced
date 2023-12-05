@@ -11,7 +11,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class MainTest {
     private final Main testing = new Main();
     @Test
-    void main() {
+    void testFormat() {
         String input = "2023-03-01T13:00:00Z";
         OffsetDateTime odt = OffsetDateTime.parse(input);
         DateTimeFormatter format = DateTimeFormatter.ofPattern("dd MMMM yyyy");

@@ -1,24 +1,29 @@
 package Test5;
-
+import java.time.OffsetDateTime;
 import java.time.format.DateTimeFormatter;
-import java.time.temporal.ChronoUnit;
+import java.util.Locale;
+
+//Crea un oggetto data da questa stringa 2023-03-01T13:00:00Z
+//aggiungi un anno
+//sottrai un mese
+//aggiungi 7 giorni
+//Stampa il risultato localizzata per l'Italia
 
 public class Main {
     public static void main(String[] args) {
-    String dateString = "2002-03-01T13:00:00Z";
-    java.time.OffsetDateTime offsetDateTime = java.time.OffsetDateTime.parse(dateString);
 
-    offsetDateTime = offsetDateTime.plusYears(1);
+        OffsetDateTime date = OffsetDateTime.parse("2023-03-01T13:00:00Z");
+        System.out.println(changeDateItaly(date));
+    }
 
-    offsetDateTime = offsetDateTime.minusMonths(1);
+    public static String changeDateItaly(OffsetDateTime date) {
+        OffsetDateTime newDate;
 
-    offsetDateTime = offsetDateTime.plus(7, ChronoUnit.DAYS);
+        newDate = date
+                .plusYears(1)
+                .minusMonths(1)
+                .plusDays(7);
 
-    DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd MMMM yyyy HH:mm:ss Z");
-    String formattedDate = offsetDateTime.format(formatter.withLocale(java.util.Locale.ITALY));
-
-
-    System.out.println("Risultato localizzato per l'Italia: " + formattedDate);
-
-}
+        return newDate.format(DateTimeFormatter.ofPattern("dd-MM-yyyy", Locale.ITALY));
+    }
 }

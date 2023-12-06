@@ -1,30 +1,20 @@
 package Test5;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
-import java.time.LocalDateTime;
 import java.time.OffsetDateTime;
-import java.time.format.TextStyle;
-import java.util.Locale;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 class MainTest {
-    Main main = new Main();
-    private OffsetDateTime dateTime;
+    private final Main testing = new Main();
+
+    OffsetDateTime date = OffsetDateTime.parse("2023-03-01T13:00:00Z");
 
     @Test
-    void main() {
-
-        assert dateTime.getYear() == 2023;
-
-        assert dateTime.getMonthValue() == 3;
-
-        assert dateTime.getDayOfMonth() == 1;
-
-        assert dateTime.getDayOfWeek().getDisplayName(TextStyle.FULL, Locale.getDefault()).equals("Wednesday");
-
-        System.out.println("Test passati con successo!");
+    void changeDateItalyTest() {
+        String result = testing.changeDateItaly(date);
+        assertEquals("08-02-2024", result);
     }
 
 }

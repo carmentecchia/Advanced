@@ -13,5 +13,14 @@ public class Main {
 
     Person person1 = builder.build();
         System.out.println(person1);
+
+        Builder builder2 = new Builder();
+        builder.setFirstName("Mario");
+        builder.setLastName("Rossi");
+        builder.setAge(30);
+        builder.setAddress("Napoli");
+
+        Person person2 = builder.build();
+        System.out.println(person2);
     }
 }

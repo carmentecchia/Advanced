@@ -2,17 +2,9 @@ package Singleton;
 
 public class Main {
 
-    private static User user;
-    public static User getUser(){
-        if(user == null){
-            user = new User();
-        }
-        return user;
-    }
-
     public static void main(String[] args) {
-        User user1 = new User();
-        User user2 = new User();
+        User user1 = User.getInstance();
+        User user2 = User.getInstance();
 
         System.out.println("User 1:");
         user1.printInfo();
@@ -23,5 +15,7 @@ public class Main {
 
         System.out.println("\nUser 2:");
         user2.printInfo();
+
+        user1.printInfo();
     }
 }
